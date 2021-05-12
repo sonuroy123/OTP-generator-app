@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sign_up"
+    android:background="#151B54"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="233dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:hint="User Name"
+        android:padding="8dp"
+        android:layout_below="@id/txtSignUp"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:layout_width="233dp"
+        android:layout_height="60dp"
+       android:layout_below="@id/etUserName"
+        android:background="@color/white"
+        android:hint="  Mobile No"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="71dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="306dp"
+        android:layout_toRightOf="@+id/etUserName"
+        android:background="@drawable/ic_baseline_arrow_forward"
+        app:backgroundTint="#FFE49219" />
+
+
+</RelativeLayout>

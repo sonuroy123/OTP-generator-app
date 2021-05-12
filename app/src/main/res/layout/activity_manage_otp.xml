@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageOtp"
+    android:background="#151B54">
+
+    <TextView
+        android:id="@+id/txtEnterCode"
+        android:layout_width="168dp"
+        android:layout_height="50dp"
+        android:text="Enter Code"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/txtSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We have sent you SMS on "
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@id/txtEnterCode"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/etNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:hint="+91 8529735015"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/txtSent"
+        android:layout_below="@id/txtEnterCode"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/txtVerificatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="with 6 digit verification code"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@id/etNumber"
+        android:layout_marginLeft="100dp"
+         />
+
+    <EditText
+        android:id="@+id/t2"
+        android:layout_width="271dp"
+        android:layout_height="58dp"
+        android:hint="Enter OTP here"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:layout_below="@id/txtVerificatio"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="251dp"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:background="@drawable/round_btn"
+         android:layout_below="@id/t2"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"/>
+
+</RelativeLayout>
